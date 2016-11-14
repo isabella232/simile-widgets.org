@@ -1,0 +1,588 @@
+
+/*
+ *   SIMILE Skin for Mediawiki - Main Stylesheet
+ *
+ *   Author:     Stefano Mazzocchi <stefanom@mit.edu>
+ * 
+ */
+
+/* Media Imports -----------------------------------------------------*/
+
+@import url("browserdefaults_compact.css");
+/* @import url("broswerforms_compact.css"); */
+
+/* Structure & Frame -------------------------------------------------*/
+
+body {
+      margin: 0px;
+      padding: 0px;
+}
+
+#frame {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2em;
+}
+
+#frame td {
+      vertical-align: top;
+      margin: 0px;
+}
+
+#frame #contentColumn {
+      padding: 0px 1em;
+}
+
+#frame #sidebarColumn {
+      width: 220px;
+}
+
+#content {
+      width: 100%;
+}
+
+#title {
+      font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+      color: #111;
+      font-size: 2em;
+      font-weight: bold;
+      margin: 0em -1.1em 1em -1.1em;
+      padding: 0px 0px 0.1em 1.1em;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      background: #f0f0f0;
+}
+
+#wiki-path {
+      font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+}
+
+/* ----------------------------- Sidebar  -------------------------- */
+
+#sidebar {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-right: none;
+      border-top: none;
+}
+
+#sidebar .logo {
+    text-align: center;
+    padding: 2em 0px 1em 0px;
+    margin: 0px;
+}
+
+#sidebar h1 {
+    font-family: "verdana", "helvetica", "arial", sans-serif;
+    letter-spacing: 0.15em;
+    font-size: 24px;
+    color: #333;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px;
+}
+
+#sidebar h2 {
+    font-family: "verdana", "helvetica", "arial", sans-serif;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #666;
+    font-weight: normal;
+    padding: 2px 0px 2px 4px;
+    margin: 5px 0px 5px 10px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-color: #ccc;
+    color: #666;
+}
+
+#sidebar p {
+    font-family: "verdana", "helvetica", "arial", sans-serif;
+    font-size: 10px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+#sidebar ul {
+    margin: 5px 5px 15px 5px;
+    padding-left: 25px;
+}
+
+#sidebar li {
+    margin-left: 0px;
+    font-family: "verdana", "helvetica", "arial", sans-serif;
+    font-size: 10px;
+}
+
+#sidebar .important li {
+    font-weight: bold;
+}
+
+#sidebar .verbose li {
+    padding: 1px 0px 1px 0px;
+}
+
+#sidebar li.current {
+    font-weight: bold;
+}
+
+#sidebar .news {
+    font-family: "verdana", "helvetica", "arial", sans-serif;
+    font-size: 90%;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 1em;
+}
+
+#sidebar .prominent {
+    font-family: "verdana", "helvetica", "arial", sans-serif;
+    text-align: center;
+    padding: 1em;
+    padding-top: 0px;
+}
+
+/* Footer -----------------------------------------------*/
+
+#footer {    margin: 0px 0px 20em 0px;    padding: 2px 5px 2px 10px;    border-top: 1px solid #aaa;    border-bottom: 1px solid #aaa;    border-right: 1px solid #aaa;    font-family: "verdana", "helvetica", "arial", sans-serif;    font-size: 10px;    text-align: center;    float: left;    background: white;
+}#footer img {    margin: 5px 10px 5px 10px;
+}
+
+#footer .copyright {
+    letter-spacing: 0.15em;    text-transform: uppercase;
+    font-size: 12px;}
+
+/* ----------------------------- Path ---------------------------- */#header {
+    font-size: 80%;    color: #333;    background-color: #f8f8f8;    border-bottom: 1px solid #ccc;    padding: 2px 4px;    margin: 0px;}
+
+#header table {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header ul {
+    margin: 0px;
+    padding: 0px;
+}
+#header li {    display: inline;}
+
+#header #actions {
+    text-align: right;
+}
+
+.noarticletext {
+      padding: 10em;
+      color: #880000;
+}
+
+.noarticletext .text {
+      font-size: 130%;
+}
+
+.wikiPreview {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+}
+
+.wikiPreview .previewnote {
+      color: #cc0000;
+}
+
+/* Typography & Colors -----------------------------------------------*/
+
+body {
+    font-family: "georgia", "times", "times new roman", serif;
+    color: #333;
+    background-color: #fff;
+    quotes: "\201C" "\201E" "\2018" "\2019";
+    line-height: 1.2;
+}
+
+@media screen {
+    body {
+        background-image: url(http://simile.mit.edu/images/stata.jpg);
+        background-position: left bottom;
+        background-repeat: no-repeat;	
+    }
+}
+
+code {
+      font: 1.1em 'Courier New', Courier, Fixed;
+}
+
+acronym, abbr, span.caps {
+      font-size: 0.9em;
+      letter-spacing: .07em;
+}
+
+#toc {
+      background: #f8f8f8;
+      border: 1px solid #ccc;
+}
+            
+/* Links -------------------------------------------------------------*/
+
+a {color: #2153B0;} /* blue */
+a:hover {color: #173A7B;} /* dark blue */
+
+p a:visited {color: #2153B0;} /* orange */
+#content a.new {color: #cc0000;} /* red */
+
+#toc a {color: #808080;} /* gray */
+#toc a:hover {color: #173A7B;} /* dark blue */
+#toc p a:visited {color: #2153B0;} /* blue */
+
+#footer a {color: #999999;}
+#footer a:hover {color: #173A7B;} /* dark blue */
+
+/* Headers -----------------------------------------------------------*/
+
+/*h1, h2, h3, h4 {font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;}*/
+/*h1, h2, h3, h4 {font-family: Verdana, Arial, Sans-Serif;}*/
+h1, h2 {
+      border-bottom: 1px solid #ccc;  
+      line-height: 1.1em; 
+      padding-bottom: 0.2em;
+}
+
+/* Lists -------------------------------------------------------------*/
+
+ul {
+      margin: 10px;
+      padding-left: 15px;
+}
+
+html>body li {
+      margin-left:   10px;
+      margin-bottom: 0.5em;
+}
+
+.portlet ul {
+      margin-bottom: 2em;
+}
+
+.portlet li {
+      margin: 0.5em 0;
+}
+
+dt {
+      font-weight: bold;
+      margin-bottom: .1em;
+}
+
+dl {
+      margin-top: .2em;
+      margin-bottom: .5em;
+}
+
+dd {
+      line-height: 1.5em;
+      margin-left: 2em;
+      margin-bottom: .1em;
+}
+
+/* Special stylized non-IE bullets
+   Does not work in Internet Explorer, which merely default to normal bullets. */
+html>body .portlet ul {
+      list-style: none;
+      margin-left: 0px;
+      padding: 0 0 0 30px;
+      padding-left: 10px;
+      text-indent: -10px;
+} 
+
+html>body .portlet li {
+      margin-left: 10px;
+}
+
+html>body .portlet ul li:before {
+      content: "\00BB \0020";
+}
+
+
+/* Form Elements -----------------------------------------------------*/
+
+#search {
+      text-align: center;
+      margin-bottom: 1em;
+}
+
+#searchInput {
+      border: 1px solid #ccc;
+      padding: 2px 3px;
+      color: #888;
+      font-size: 90%;
+      width: 8em;
+}
+
+.searchButton {
+      font-size: 90%;
+      padding: 1px 2px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      margin: 0px 0px 0px 0.3em;
+}
+
+
+/* Various Tags & Classes --------------------------------------------*/
+
+#siteSub, #contentSub, .urlexpansion, .printfooter {
+      display: none;
+}
+
+.usermessage {
+    background-color: #ffce7b; /* yellow */
+    border: 1px solid #ffa500; /* orange */
+    color: Black;
+    font-weight: bold;
+    margin: 2em 0em 1em 0em;
+    padding: 0.5em 1em;
+    vertical-align: middle;
+}
+
+#siteNotice {
+    font-size: 95%;
+    padding: 0 0.9em 0 0.9em;
+    text-align: center;
+}
+
+#siteNotice p {
+      margin: 0; 
+      padding: 0;
+}
+
+.error {
+      color: red; 
+      font-size: larger;
+}
+
+#catlinks {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    margin-top: 1em;
+}
+
+#catlinks p {
+      margin: 0.5em;
+}
+
+/* Tabs --------------------------------------------------------------*/
+
+#tabs {    margin: 1em 0px 2em 0px;    list-style: none outside none;    text-align: center;
+    font-size: 90%;
+    border-bottom: 1px solid #ccc;} #tabs li {    display: inline;    margin: 0px;    padding: 0px;    position: relative;
+    top: 0.5em;    border: 1px solid #ccc;
+    background-color: #fff;    color: #333;
+    margin-right: 0.3em;}#tabs a, #tabs a:link, #tabs a:visited {
+   position: relative;
+   left: 0.1em;   cursor: pointer;   padding: 2px 5px 2px 5px;   text-decoration: none;}#tabs a:hover {   color: #000;}#tabs a:active {   color: #cc0000;}
+#tabs .selected {   background: #fff;   border-bottom: none;
+   border-top: none;}
+
+/* Content -----------------------------------------------------------*/
+
+img {
+      border: 0px solid #333;
+}
+
+pre {
+      border: 1px dashed #808080;
+      padding: 3px;
+      margin: auto;
+      background-color: #ffffef;
+      color: #000;
+      font-size: 1.0em;
+}
+
+tt {
+      font-size: 1.1em;
+      color: #0000ff;
+}
+
+textarea {
+      width: 100%;
+}
+
+#toc {
+      margin: 1em;
+}
+#toc td {
+      padding: 0.5em;
+}
+#toc h2 {
+      margin-top: 0px;
+}
+#toc .toctoggle {
+      float: right;
+}
+#toc .tocindent {
+      margin-left: 1em;
+}
+
+.autocomment {
+      color: gray;
+}
+#pagehistory span.user {
+      margin-left: 1.4em; 
+      margin-right: 0.4em;
+}
+#pagehistory span.minor {
+      font-weight: bold;
+}
+#pagehistory input {
+      margin: 0.2em;
+}
+#pagehistory li {
+      border: 1px solid #ffffff; 
+      margin-top: 1px; 
+      margin-bottom: 1px;
+}
+#pagehistory li.selected {
+      background-color: #CBDDFF; /* light blue */
+      border:1px dashed #FDA32F; /* orange */
+}
+
+table.diff {
+      background: #FEFEFE; 
+      border: 1px solid #cccccc; 
+      padding: 0.5em
+}
+table.diff td {
+      vertical-align: top;
+}
+td.diff-otitle a, td.diff-ntitle a, td.diff-otitle a:visited, td.diff-ntitle a:visited {
+      color: #2153B0;
+}
+td.diff-otitle a:hover, td.diff-ntitle a:hover {
+      text-decoration: underline;
+}
+td.diff-otitle {}
+td.diff-ntitle {}
+td.diff-addedline {
+      background:#F2F6FF;
+}
+td.diff-addedline span.diffchange {
+      background: #CDDEFF;
+      border: 1px dashed #676F80;
+      color: green;
+      font-weight: bold;
+}
+td.diff-deletedline {
+      background:#FFF9F2;
+}
+td.diff-deletedline span.diffchange {
+      background: #FFE9CB;
+      border: 1px dashed #B3A38E;
+      color: red;
+      font-weight: bold;
+      text-decoration: line-through;
+}
+td.diff-context {
+      background:#eeeeee;
+}
+.newpage {
+      color: green; 
+      font-weight: bolder;
+}
+
+fieldset {
+      background: #FAFCFF;
+      border: 1px solid #CBDDFF;
+      margin: 1em;
+      padding: 0.5em 1em;
+}
+
+fieldset div {
+      margin: 0.25em 0;
+}
+
+fieldset input {
+      margin: 0 0.5em;
+}
+
+legend {
+      color: #2153B0;
+      font-size: 1.25em;
+      font-weight: bolder;
+      padding: 0.2em 0.5em;
+}
+
+
+/* images */
+div.floatright, table.floatright {
+    clear: right;
+    float: right;
+    position: relative;
+    margin: 0 0 0.5em 0.5em;
+    border: 0
+}
+
+div.floatright p { font-style: italic; }
+div.floatleft, table.floatleft {
+    float: left;
+    position: relative;
+    margin: 0 0.5em 0.5em 0;
+    border: 0
+}
+
+div.floatleft p { 
+      font-style: italic; 
+}
+
+div.thumb {
+    margin-bottom: 0.5em;
+    border-style: solid; border-color: White;
+    width: auto;
+}
+div.thumb div {
+    border:1px solid #cccccc;
+    padding: 3px !important;
+    background-color:#f9f9f9;
+    font-size: 94%;
+    text-align: center;
+    overflow: hidden;
+}
+div.thumb div a img {
+    /*border:1px solid #cccccc;*/
+}
+div.thumb div div.thumbcaption {
+    border: none;
+    text-align: left;
+    line-height: 1.4em;
+    padding: 0.3em 0 0.1em 0;
+}
+div.magnify {
+    float: right;
+    border: none !important;
+    background: none !important;
+}
+div.magnify a, div.magnify img {
+    display: block;
+    border: none !important;
+    background: none !important;
+}
+div.tright {
+    clear: right;
+    float: right;
+    border-width: 0.5em 0 0.8em 1.4em;
+}
+div.tleft {
+    float: left;
+    margin-right:0.5em;
+    border-width: 0.5em 1.4em 0.8em 0;
+}
+img.tex { 
+      vertical-align: middle; 
+}
+span.texhtml { 
+      font-family: serif; 
+}
+
+.urlexpansion, .hiddenStructure {
+    display: none;
+}
+
